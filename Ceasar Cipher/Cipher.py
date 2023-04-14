@@ -1,4 +1,3 @@
-# import random
 # --------------------------------------------------------------------
 
 def createCipher(text, shift):
@@ -27,18 +26,8 @@ def crackCipher(text):
     return results
 
 # --------------------------------------------------------------------
-#  main function
 
 plaintext = input("Enter you Text: ")
-
-# while(1):
-#     encryptingShift = int(input("Enter you Cipher Shift: "))
-#     if (encryptingShift < 1 or encryptingShift > 25):
-#         print("ERROR: Limit is ( 1 - 25) ")
-#         continue
-#     else:
-#         code = createCipher(plaintext,encryptingShift)
-#         break
 encryptingShift = int(input("Enter you Cipher Shift: "))
 code = createCipher(plaintext,encryptingShift)
 
